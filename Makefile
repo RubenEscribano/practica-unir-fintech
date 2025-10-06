@@ -1,4 +1,10 @@
-.PHONY: all $(MAKECMDGOALS)
+.PHONY: run test
 
 run:
-	docker run --rm --volume `pwd`:/opt/app --env PYTHON_PATH=/opt/app -w /opt/app python:3.6-slim python3 main.py words.txt yes
+	python main.py palabras.txt yes asc
+
+test:
+	python -m pytest
+
+install:
+	pip install -r requirements.txt
