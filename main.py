@@ -34,6 +34,7 @@ if __name__ == "__main__":
     elif len(sys.argv) == 3:
         filename = sys.argv[1]
         remove_duplicates = sys.argv[2].lower() == "yes"
+        ascending = sys.argv[3].lower() == "asc"
     else:
 
         print("Se debe indicar el fichero como primer argumento")

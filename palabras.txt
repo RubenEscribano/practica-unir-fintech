@@ -1,0 +1,10 @@
+hogwarts
+gryffindor
+slytherin
+hufflepuff
+ravenclaw
+quidditch
+wizard
+muggle
+spell
+potion
