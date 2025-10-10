@@ -1,10 +1,7 @@
 .PHONY: run test
 
 run:
-	python main.py palabras.txt yes asc
+	docker run --rm --volume `pwd`:/opt/app --env PYTHON_PATH=/opt/app -w /opt/app python:3.6-slim python3 main.py words.txt yes
 
-test:
-	python -m pytest
-
-install:
-	pip install -r requirements.txt
+local:
+	python3 main.py words.txt yes
